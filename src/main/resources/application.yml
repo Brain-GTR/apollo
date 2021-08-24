@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Brain-GTR/config_repository.git #git 仓库的地址
+          #username: github 登录账号
+          #password: github 登录密码
+          #default-label: master #配置文件分支
+          #search-paths: config  #配置文件所在根目录
